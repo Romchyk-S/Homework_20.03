@@ -62,8 +62,6 @@ class DataContainer:
             
             y_i += 1
         
-        # ax.text(a, b, text, fontsize = 14)
-        
         ax.legend()
         
         ax.grid(True)

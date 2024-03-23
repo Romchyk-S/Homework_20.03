@@ -82,8 +82,6 @@ i = 0
 
 for i in range(0, m.ceil(len(to_be_plotted)), 2):
     
-    # print(i)
-    
-    # print(to_be_plotted[i:i+4])
+    print(i)
     
     linewidth, marker_size = plot_func_on_1_1_mosaic(to_be_plotted[i:i+2], colors[i:i+2], markers[i:i+2], linewidth, marker_size)

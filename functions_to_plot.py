@@ -23,7 +23,7 @@ def func_1():
     
     label = "$x^2-6x+9$"
     
-    title = "$increasing: y>3 \ \ increasing: y<3$"
+    title = "$increasing: x>3 \ \ decreasing: x<3$"
     
     return x, x**2-6*x+9, label, title
 
@@ -33,7 +33,7 @@ def func_2():
     
     label = "$x-x^2$"
     
-    title = "$increasing: x < \frac{1}{2} \ \ decreasing:: x > \frac{1}{2}$"
+    title = "$increasing: x < 1/2 \ \ decreasing: x > 1/2$"
     
     return x, x-x**2, label, title
 
@@ -41,9 +41,9 @@ def func_3():
     
     x = np.arange(-10, 10, 0.1)
     
-    label = "$x-1-x**2$"
+    label = "$x-1-x^2$"
     
-    title = "$increasing: x < \frac{1}{2} \ \ decreasing:: x > \frac{1}{2}$"
+    title = "$increasing: x < 1/2 \ \ decreasing: x > 1/2$"
     
     return x, x-1-x**2, label, title
 
@@ -53,7 +53,7 @@ def func_4():
     
     label = "$log_{1/2} (x-1)$"
     
-    title = "$0$"
+    title = "$decreasing: x > 1 $"
     
     return x, np.emath.logn(1/2, x-1), label, title
 
@@ -61,7 +61,7 @@ def func_5():
     
     label = "$log_{1/2} (-x)$"
     
-    title = "$0$"
+    title = "$increasing: x < 0$"
     
     x = np.arange(-10, -0.01, 0.1)
     
@@ -103,7 +103,7 @@ def func_8():
     
     label = "$(x-2)/(x^2-4x+3)$"
     
-    title = "$decreasing: x \in (-\infty;1) \cup (3;+\infty) \\ increasing: (1;3)$"
+    title = "$decreasing: x \in (-\infty;1) \cup (1;3) \cup (3;+\infty)$"
   
     return x, y, label, title
 
@@ -119,7 +119,7 @@ def func_9():
     
     label = "$(x^2-5x+6)/(x^2-5x-6)$"
     
-    title = "$increasing: x \in (-\infty;-2.5) \cup x \in (-1;7) \\ decreasing: x \in (-2.5;-1) \cup (7;+\infty) $"
+    title = "$increasing: x \in (-\infty;-1) \cup x \in (-1;2.5) \ \ decreasing: x \in (2.5;6) \cup x \in (6;+\infty)$"
   
     return x, y, label, title
 
@@ -134,13 +134,12 @@ def func_9_1():
     return x, np.sin(2*x), label, title
 
 
- 
 def func_9_2():
     
-    x = np.arange(-0.5, 0.5, 0.1)
+    x = np.arange(-0.5, 0.5, 0.01)
     
     label = "$arccos(2x)$"
     
-    title = "$0$"
+    title = "$decreasing: x \in (-1/2,1/2)$"
   
     return x, np.arccos(2*x), label, title
