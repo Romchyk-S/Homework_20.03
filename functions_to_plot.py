@@ -13,7 +13,7 @@ def func_0():
     
     label = "$x^2-4x+3$"
     
-    title = "$increasing: x>2, decreasing: x<2$"
+    title = "$y > 0: x \in (-\infty;1) \cup (3;+\infty) \ \ y < 0: x \in (1;3)$"
     
     return x, x**2-4*x+3, label, title
 
@@ -23,7 +23,7 @@ def func_1():
     
     label = "$x^2-6x+9$"
     
-    title = "$increasing: x>3 \ \ decreasing: x<3$"
+    title = "$y > 0: x \in (-\infty;3) \cup (3;+\infty)$"
     
     return x, x**2-6*x+9, label, title
 
@@ -33,7 +33,7 @@ def func_2():
     
     label = "$x-x^2$"
     
-    title = "$increasing: x < 1/2 \ \ decreasing: x > 1/2$"
+    title = "$y > 0: x \in (0;1) \ \ y < 0: x \in (-\infty;0) \cup (1;+\infty)$"
     
     return x, x-x**2, label, title
 
@@ -43,7 +43,7 @@ def func_3():
     
     label = "$x-1-x^2$"
     
-    title = "$increasing: x < 1/2 \ \ decreasing: x > 1/2$"
+    title = "$y < 0: x \in \Re $"
     
     return x, x-1-x**2, label, title
 
@@ -53,7 +53,7 @@ def func_4():
     
     label = "$log_{1/2} (x-1)$"
     
-    title = "$decreasing: x > 1 $"
+    title = "$y > 0: x \in (1;2) \ \ y < 0: x \in (2;+\infty)$"
     
     return x, np.emath.logn(1/2, x-1), label, title
 
@@ -61,7 +61,7 @@ def func_5():
     
     label = "$log_{1/2} (-x)$"
     
-    title = "$increasing: x < 0$"
+    title = "$y > 0: x \in (-1;0) \ \ y < 0: x \in (-\infty;-1)$"
     
     x = np.arange(-10, -0.01, 0.1)
     
@@ -76,7 +76,7 @@ def func_6():
     
     label = "$12/(x-1)$"
     
-    title = "$decreasing: x \in (-∞;1) \cup (1;+∞)$"
+    title = "$y > 0: x \in (1;+\infty)  \ \ y < 0: x \in (-\infty;1)$"
 
     return x, y, label, title
 
@@ -89,7 +89,7 @@ def func_7():
     
     label = "$(3x+5)/(x-2)$"
     
-    title = "$decreasing: x \in (-∞;2) \cup (2;+∞)$"
+    title = "$y > 0: x \in (-\infty;5/3) \cup (2;+\infty) \ \ y < 0: x \in (5/3;2)$"
   
     return x, y, label, title
 
@@ -103,7 +103,7 @@ def func_8():
     
     label = "$(x-2)/(x^2-4x+3)$"
     
-    title = "$decreasing: x \in (-\infty;1) \cup (1;3) \cup (3;+\infty)$"
+    title = "$y > 0: x \in (1;2) \cup (3;+\infty) \ \ y < 0: x \in (-\infty;1) \cup (2;3)$"
   
     return x, y, label, title
 
@@ -119,7 +119,7 @@ def func_9():
     
     label = "$(x^2-5x+6)/(x^2-5x-6)$"
     
-    title = "$increasing: x \in (-\infty;-1) \cup x \in (-1;2.5) \ \ decreasing: x \in (2.5;6) \cup x \in (6;+\infty)$"
+    title = "$y > 0: x \in (-\infty;-1) \cup (2;3) \cup (6;+\infty) \ \ y < 0: x \in (-1;2) \cup (3;6)$"
   
     return x, y, label, title
 
@@ -129,7 +129,7 @@ def func_9_1():
     
     label = "$sin(2x)$"
     
-    title = "$increasing: x \in (-\pi/4 + \pi_n;-\pi/4 + \pi_n) \\ decreasing: x \in (\pi/4 + \pi_n;-\pi/4 + \pi_n)$"
+    title = "$y > 0: x \in (0+\pi_n; \pi/2+\pi_n) \ \ y < 0: x \in (\pi/2 +\pi_n;\pi+\pi_n) \ \ n = 0,1,2... $"
   
     return x, np.sin(2*x), label, title
 
@@ -140,6 +140,6 @@ def func_9_2():
     
     label = "$arccos(2x)$"
     
-    title = "$decreasing: x \in (-1/2,1/2)$"
+    title = "$y > 0: x \in (-1/2;1/2)$"
   
     return x, np.arccos(2*x), label, title
